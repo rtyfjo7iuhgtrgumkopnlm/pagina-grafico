@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Plantas - Gráficos de Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard de Plantas</h1>
+            <p>Acompanhe os principais indicadores de crescimento e consumo de água de diferentes espécies de plantas cultivadas. Aqui você vai ver o desenvolvimento ao longo do tempo, auxiliando no gerenciamento eficiente das necessidades de cada planta.</p>
+        </header>
+
+        <section class="info-section">
+            <h3>O que este dashboard apresenta:</h3>
+            <p>Este dashboard monitora duas métricas principais:</p>
+            <ul>
+                <li><strong>Crescimento das plantas</strong>: Representado em um gráfico de pizza, mostra o progresso de crescimento em centímetros ao longo de cinco semanas.</li>
+                <li><strong>Consumo de água</strong>: Outro gráfico de pizza exibe o consumo médio de água (em litros) para diferentes espécies de plantas.</li>
+            </ul>
+
+            <h3>Informações sobre as plantas:</h3>
+            <ul>
+                <li><strong>Aloe Vera</strong>: Conhecida por suas propriedades medicinais, o Aloe Vera é uma planta suculenta que requer pouca água e cresce bem em ambientes secos.</li>
+                <li><strong>Cacto</strong>: Os cactos são plantas que armazenam água em seus caules, adaptadas a climas áridos, com um baixo consumo de água.</li>
+                <li><strong>Samambaia</strong>: Planta ornamental popular em ambientes sombreados, a samambaia prefere ambientes úmidos e precisa de rega frequente.</li>
+                <li><strong>Manjericão</strong>: Uma erva aromática utilizada na culinária, o manjericão tem um consumo moderado de água e cresce melhor em solos bem drenados.</li>
+                <li><strong>Suculenta</strong>: As suculentas são plantas que armazenam água em suas folhas, tornando-as resistentes a longos períodos de seca.</li>
+            </ul>
+        </section>
+
+        <main>
+            <section class="charts-section">
+                <h2>Crescimento das Plantas</h2>
+                <div class="chart-container">
+                    <canvas id="growthChart"></canvas>
+                </div>
+
+                <h2>Consumo de Água</h2>
+                <div class="chart-container">
+                    <canvas id="waterChart"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 | Design por Leandro</p>
+        </footer>
+
+        <!-- Adicionando Chart.js via CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
